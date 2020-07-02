@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>a blog</title>
+      <link href="/2020/07/02/a-blog/"/>
+      <url>/2020/07/02/a-blog/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一次测试"><a href="#一次测试" class="headerlink" title="一次测试"></a>一次测试</h1><p><strong>加粗</strong><br><em>斜体</em><br><strong><em>粗加斜</em></strong><br><del>删除</del></p><blockquote><p>引用</p></blockquote><hr><p><img src="http://image.baidu.com/search/detail?ct=503316480&z=0&ipn=false&word=%E6%8A%AB%E5%A4%B4%E5%A3%AB&step_word=&hs=2&pn=1&spn=0&di=21560&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=830371357%2C170310971&os=2835436306%2C2915649216&simid=3371480640%2C257786780&adpicid=0&lpn=0&ln=3578&fr=&fmq=1593637710276_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=star&bdtype=0&oriquery=&objurl=http%3A%2F%2Fi0.sinaimg.cn%2Fty%2F2014%2F0716%2FU6940P6DT20140716175032.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fh7gcbb_z%26e3Bv54AzdH3FxoAzdH3Fpty7AzdH3Fda89-a0-80AzdH3F800lm_z%26e3Bip4s&gsm=2&rpstart=0&rpnum=0&islist=&querylist=&force=undefined" alt="abbey road"><br><a href="https://www.zhihu.com/search?type=content&q=c%2B%2B%20primer" target="_blank" rel="noopener">c++ primer</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> my days </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hello world</title>
       <link href="/2019/12/16/Hello%20World/"/>
       <url>/2019/12/16/Hello%20World/</url>
