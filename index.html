@@ -234,7 +234,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://carpediem-d.github.io/2019/12/16/css/">
+    <link itemprop="mainEntityOfPage" href="https://carpediem-d.github.io/2020/10/13/20202013-%E3%80%8Ac++primer%E3%80%8B%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -248,7 +248,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2019/12/16/css/" class="post-title-link" itemprop="url">计算机学习2</a>
+            <a href="/2020/10/13/20202013-%E3%80%8Ac++primer%E3%80%8B%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" class="post-title-link" itemprop="url">《c++primer》第二章 变量和基本类型</a>
         </h2>
 
         <div class="post-meta-container">
@@ -258,23 +258,17 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2019-12-16 00:00:00" itemprop="dateCreated datePublished" datetime="2019-12-16T00:00:00+08:00">2019-12-16</time>
+      <time title="创建时间：2020-10-13 00:00:00 / 修改时间：23:08:55" itemprop="dateCreated datePublished" datetime="2020-10-13T00:00:00+08:00">2020-10-13</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-10-13 09:06:10" itemprop="dateModified" datetime="2020-10-13T09:06:10+08:00">2020-10-13</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CS/" itemprop="url" rel="index"><span itemprop="name">CS</span></a>
+          <a href="/categories/%E3%80%8Ac-primer%E3%80%8B/" itemprop="url" rel="index"><span itemprop="name">《c++primer》</span></a>
         </span>
     </span>
 
@@ -286,7 +280,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.6k</span>
+      <span>895</span>
     </span>
 </div>
 
@@ -297,19 +291,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="总路线-按照时间顺序-："><a href="#总路线-按照时间顺序-：" class="headerlink" title="总路线(按照时间顺序)："></a>总路线(按照<strong>时间</strong>顺序)：</h1><h2 id="Step-1-C"><a href="#Step-1-C" class="headerlink" title="Step 1.C++"></a>Step 1.C++</h2><blockquote>
-<p>你已经学过一点了</p>
-<p>首先leetcode:</p>
-<p>​    写20道简单，5道中等，看看你还会不会写题了</p>
-<p>微信读书：</p>
-<p>​    随便找一本能搜索到的C++的比较专业的书(非国内的，要那种有点经典的，或者是那个博主推荐的):看一眼，再看看你需不需要买，我觉得暂时可能不需要</p>
-<p>C++有几个基本的语法问题要看一看：</p>
-<p>​    指针(那些取地址什么的，自己做实验试试），STL的使用，lambda表达式（看看是什么东西就行了），类之间的继承关系，结构体怎么用，运算符重载大概长啥样，虚函数的定义，抽象函数的定义，函数调用；暂时先这几个语法知识。</p>
-<p>C++其实这么多就够了,扩展任务:用C++写个黑框的小游戏出来，随便啥游戏，但是要能玩，如果可以搞个UI界面就更好了</p>
-</blockquote>
+          <h1 id="内置基本类型"><a href="#内置基本类型" class="headerlink" title="内置基本类型"></a>内置基本类型</h1><h2 id="算术类型-arithmetic-type"><a href="#算术类型-arithmetic-type" class="headerlink" title="算术类型(arithmetic type)"></a>算术类型(arithmetic type)</h2><ul>
+<li><p>算术类型分为两类：整型(integral type,包括字符和布尔类型在内)和浮点型。</p>
+</li>
+<li><p>算术类型的尺寸在不同机器上有所差别，下表列出了C++标准规定的尺寸的最小值，同时允许编译器赋予这些类型更大的尺寸</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/12/16/css/#more" rel="contents">
+              <a class="btn" href="/2020/10/13/20202013-%E3%80%8Ac++primer%E3%80%8B%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%8F%98%E9%87%8F%E5%92%8C%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -384,7 +372,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">1k</span>
   </span>
 </div>
 
