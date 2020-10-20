@@ -32,7 +32,7 @@
 <meta property="og:description" content="命名空间的using声明 使用using声明(using declaration)就无须专门的前缀也能使用所需的名字了。 using namespace::name；  每个名字都需要独立的using声明。  头文件不应包含using声明。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-15T05:13:00.695Z">
+<meta property="article:modified_time" content="2020-10-19T09:39:12.310Z">
 <meta property="article:author" content="DZY">
 <meta name="twitter:card" content="summary">
 
@@ -172,7 +172,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#命名空间的using声明"><span class="nav-number">1.</span> <span class="nav-text">命名空间的using声明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标准库类型string"><span class="nav-number">2.</span> <span class="nav-text">标准库类型string</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义和初始化string对象"><span class="nav-number">2.1.</span> <span class="nav-text">定义和初始化string对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#string对象上的操作"><span class="nav-number">2.2.</span> <span class="nav-text">string对象上的操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理string对象中的字符"><span class="nav-number">2.3.</span> <span class="nav-text">处理string对象中的字符</span></a></li></ol></li></ol></div>
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#命名空间的using声明"><span class="nav-number">1.</span> <span class="nav-text">命名空间的using声明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标准库类型string"><span class="nav-number">2.</span> <span class="nav-text">标准库类型string</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义和初始化string对象"><span class="nav-number">2.1.</span> <span class="nav-text">定义和初始化string对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#string对象上的操作"><span class="nav-number">2.2.</span> <span class="nav-text">string对象上的操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理string对象中的字符"><span class="nav-number">2.3.</span> <span class="nav-text">处理string对象中的字符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标准库vector"><span class="nav-number">3.</span> <span class="nav-text">标准库vector</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义和初始化vector对象"><span class="nav-number">3.1.</span> <span class="nav-text">定义和初始化vector对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vector支持的操作"><span class="nav-number">3.2.</span> <span class="nav-text">vector支持的操作</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#迭代器介绍-iterator"><span class="nav-number">4.</span> <span class="nav-text">迭代器介绍(iterator)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用迭代器"><span class="nav-number">4.1.</span> <span class="nav-text">使用迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器运算"><span class="nav-number">4.2.</span> <span class="nav-text">迭代器运算</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数组"><span class="nav-number">5.</span> <span class="nav-text">数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义和初始化内置数组"><span class="nav-number">5.1.</span> <span class="nav-text">定义和初始化内置数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指针和数组"><span class="nav-number">5.2.</span> <span class="nav-text">指针和数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C风格字符串"><span class="nav-number">5.3.</span> <span class="nav-text">C风格字符串</span></a></li></ol></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -188,7 +188,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -263,10 +263,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2020-10-15 00:00:00 / 修改时间：13:13:00" itemprop="dateCreated datePublished" datetime="2020-10-15T00:00:00+08:00">2020-10-15</time>
+      <time title="创建时间：2020-10-15 00:00:00" itemprop="dateCreated datePublished" datetime="2020-10-15T00:00:00+08:00">2020-10-15</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-10-19 17:39:12" itemprop="dateModified" datetime="2020-10-19T17:39:12+08:00">2020-10-19</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -285,7 +291,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.6k</span>
+      <span>4.8k</span>
     </span>
 </div>
 
@@ -336,6 +342,83 @@
 <li><p>使用下标运算符( [ ] )处理string对象中的单个字符，<u><strong>其接受的输入参数是string::size_type类型；返回值是该位置上字符的引用</strong></u>。</p>
 </li>
 </ul>
+<h1 id="标准库vector"><a href="#标准库vector" class="headerlink" title="标准库vector"></a>标准库vector</h1><ul>
+<li>标准库类型<strong>vector</strong>表示对象的集合，其中所有对象的类型都相同。它是一个<strong>类模板</strong>(class template)。</li>
+<li>编译器根据模板创建类或者函数的过程称为<strong>实例化</strong>(instantiation)。</li>
+</ul>
+<h2 id="定义和初始化vector对象"><a href="#定义和初始化vector对象" class="headerlink" title="定义和初始化vector对象"></a>定义和初始化vector对象</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;T&gt; v1;                       <span class="comment">//默认初始化，v1是一个空vector，它潜在的元素是T类型的</span></span><br><span class="line"><span class="built_in">vector</span>&lt;T&gt; v2(v1);                   <span class="comment">//拷贝初始化，v2中包含v1所有元素的副本</span></span><br><span class="line"><span class="built_in">vector</span>&lt;T&gt; v2 = v1;                  <span class="comment">//拷贝初始化，等价于v2(v1)</span></span><br><span class="line"><span class="built_in">vector</span>&lt;T&gt; v3(n, val);               <span class="comment">//v3包含了n个重复元素，每个元素的值都是val</span></span><br><span class="line"><span class="built_in">vector</span>&lt;T&gt; v3&#123;n, val&#125;                 <span class="comment">//如果提供的值无法用来列表初始化，则同上。例如vector&lt;string&gt;&#123;10,"hi"&#125;;</span></span><br><span class="line"><span class="built_in">vector</span>&lt;T&gt; v4(n);                    <span class="comment">//值初始化，v4包含了n个重复地执行了值初始化地对象，T为int则每个值为0，T为string则每                                     //个值为空string对象</span></span><br><span class="line"><span class="built_in">vector</span>&lt;T&gt; v5&#123;a,b,c...&#125;;             <span class="comment">//列表初始化，v5包含了初始值个数地元素，每个元素被赋予相应地初始c值</span></span><br><span class="line"><span class="built_in">vector</span>&lt;T&gt; v5=&#123;a,b,c...&#125;;            <span class="comment">//列表初始化，等价于v5&#123;a,b,c...&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="vector支持的操作"><a href="#vector支持的操作" class="headerlink" title="vector支持的操作"></a>vector支持的操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">v.empty();                          </span><br><span class="line">v.size();&#x2F;&#x2F;其返回类型是vector::size_type</span><br><span class="line">v.push_back(t);</span><br><span class="line">v[n];</span><br><span class="line">v1 &#x3D; v2;</span><br><span class="line">v1 &#x3D; &#123;a,b,c...&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="迭代器介绍-iterator"><a href="#迭代器介绍-iterator" class="headerlink" title="迭代器介绍(iterator)"></a>迭代器介绍(iterator)</h1><ul>
+<li>迭代器的对象是容器中的元素或者string对象中的字符。</li>
+<li>使用迭代器可以访问某个元素，迭代器也能从一个元素移动到另一个元素。</li>
+<li>有效的迭代器指向某个元素，或者只想容器中尾元素的下一个位置。</li>
+</ul>
+<h2 id="使用迭代器"><a href="#使用迭代器" class="headerlink" title="使用迭代器"></a>使用迭代器</h2><ul>
+<li><p>有迭代器的类型同时拥有返回迭代器的成员。比如<strong>begin</strong>和<strong>end</strong>成员。</p>
+</li>
+<li><p>begin成员返回指向第一个元素的迭代器，end成员返回指向容器“尾元素的下一个位置（one past the end）”的迭代器，该迭代器指示的是容器的一个本不存在的“<strong>尾后</strong>（off the end）”元素。</p>
+</li>
+<li><p>标准容器迭代器的运算符：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*iter;                                      <span class="comment">//返回迭代器iter所知元素的引用</span></span><br><span class="line">iter-&gt;mem;                                  <span class="comment">//解引用iter并获得该元素名为mem的成员，等价于(*iter).mem</span></span><br><span class="line">++iter;                                     <span class="comment">//令iter指示容器中的下一个元素</span></span><br><span class="line">--iter;                                     <span class="comment">//令iter指示容器中的上一个元素</span></span><br><span class="line">iter1 == iter2;                             <span class="comment">//判断两个迭代器是否相等（不相等），如果两个迭代器指示的是同一个元素或者</span></span><br><span class="line">iter1 != iter2;                             <span class="comment">//它们是同一个容器的尾后迭代器，则相等，反之则不等</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="迭代器运算"><a href="#迭代器运算" class="headerlink" title="迭代器运算"></a>迭代器运算</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">iter + n;</span><br><span class="line">iter - n;</span><br><span class="line">iter += n;</span><br><span class="line">iter -=n;</span><br><span class="line">iter1 - iter2;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><u>iter1-iter2的返回值类型是<strong>difference_type</strong>的带符号型整数</u>。</li>
+</ul>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="定义和初始化内置数组"><a href="#定义和初始化内置数组" class="headerlink" title="定义和初始化内置数组"></a>定义和初始化内置数组</h2><ul>
+<li><p>数组是一种<strong>复合类型</strong>。</p>
+</li>
+<li><p>数组的声明形如a[b]，a是数组的名字，b是数组的维度。</p>
+</li>
+<li><p>维度必须是一个常量表达式。</p>
+</li>
+<li><p>默认情况下，数组的元素被默认初始化。<u>和内置类型的变量一样，在函数内部定义的某种内置数据类型的数组，默认初始化会令数组有未定义的值。</u></p>
+</li>
+<li><p>不能将数组的内容拷贝给其他数组或为其他数组赋值。</p>
+</li>
+<li><p>字符数组的特殊性：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> a1[] = &#123;<span class="string">'C'</span>,<span class="string">'+'</span>,<span class="string">'+'</span>&#125;;               <span class="comment">//列表初始化，没有空字符</span></span><br><span class="line"><span class="keyword">char</span> a2[] = &#123;<span class="string">'C'</span>,<span class="string">'+'</span>,<span class="string">'+'</span>,<span class="string">'\0'</span>&#125;;          <span class="comment">//列表初始化，含有显示的空字符</span></span><br><span class="line"><span class="keyword">char</span> a3[] = <span class="string">"C++"</span>;                       <span class="comment">//自动添加表示字符串结束的空字符</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> a4[<span class="number">6</span>] = <span class="string">"Daniel"</span>;             <span class="comment">//错误：没有空间可以存放空字符</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复杂的数组声明：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> *ptrs[<span class="number">10</span>];                          <span class="comment">//ptrs是含有10个整形指针的数组；</span></span><br><span class="line"><span class="keyword">int</span> &amp;refs[<span class="number">10</span>] = ...                     <span class="comment">//错误，引用不是对象，不存在引用的数组</span></span><br><span class="line"><span class="keyword">int</span> (*parray)[<span class="number">10</span>] = &amp;arr;               <span class="comment">//parray指向一个含有10个整数的数组</span></span><br><span class="line"><span class="keyword">int</span> (&amp;arrRef)[<span class="number">10</span>] = arr;                <span class="comment">//arrRef引用一个含有10个整数的数组</span></span><br><span class="line"><span class="keyword">int</span> *(&amp;arry)[<span class="number">10</span>] = ptrs;                <span class="comment">//arry是数组的引用，该数组含有10个整形指针</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><u>数组下标的类型是<strong>size_t</strong>,它是一种机器相关的无符号类型，被设计得足够大以便能表示内存中任意对象的大小</u><u>。在cstddef头文件中定义了size_t类型。</u></p>
+</li>
+</ul>
+<h2 id="指针和数组"><a href="#指针和数组" class="headerlink" title="指针和数组"></a>指针和数组</h2><ul>
+<li><p><u>在很多用到数组名字的地方，编译器都会自动地将其替换为一个指向数组首元素的指针。</u></p>
+<p><code>string nums[] = {...};</code></p>
+<p><code>string *ptr = nums; //等价于ptr = &amp;nums[0];</code></p>
+</li>
+<li><p><u>在大多数表达式中，使用数组类型的对象其实是使用一个指向该数组首元素的指针。</u></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> ia[]=&#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">auto</span> <span class="title">ia2</span><span class="params">(ia)</span></span>;   <span class="comment">//ia2是一个整型指针，指向ia的第一个元素</span></span><br><span class="line"><span class="keyword">decltype</span>(ia) ia3 =&#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;   <span class="comment">//ia3是一个含有10个整数的数组</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>指针也是迭代器</strong>：就像使用迭代器遍历vector对象中的元素一样，使用指针也能遍历数组中的元素。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arr[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> *p=arr;                           <span class="comment">//p指向arr的第一个元素；</span></span><br><span class="line">++p;                                  <span class="comment">//p指向arr[1];</span></span><br><span class="line"><span class="keyword">int</span> *e = &amp;arr[<span class="number">10</span>];                    <span class="comment">//e指向arr尾元素的下一位置</span></span><br><span class="line"><span class="keyword">int</span> *beg = <span class="built_in">begin</span>(arr);                <span class="comment">//beg指向arr的首元素</span></span><br><span class="line"><span class="keyword">int</span> *last = <span class="built_in">end</span>(arr);                 <span class="comment">//last指向arr尾元素的下一个位置</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><u>两个指针相减的结果的类型是一种名为<strong>ptrdiff_t</strong>的标准库类型，定义在<strong>cstddef</strong>头文件中的机器相关的类型，是一种带符号类型。</u></p>
+</li>
+<li><p>下标和指针：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> ia[] = &#123;<span class="number">0</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">8</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> i =ia[<span class="number">2</span>];            <span class="comment">//ia转换成指向数组首元素的指针，ia[2]得到(ia+2)所指的元素;</span></span><br><span class="line"><span class="keyword">int</span> *p = ia;             <span class="comment">//p指向ia的首元素；</span></span><br><span class="line">i = *(p + <span class="number">2</span>);            <span class="comment">//i = ia[2];</span></span><br><span class="line"><span class="keyword">int</span> *p = &amp;ia[<span class="number">2</span>];         <span class="comment">//p指向索引为2的元素；</span></span><br><span class="line"><span class="keyword">int</span> j = p[<span class="number">1</span>];            <span class="comment">//p[1]等价于*(p+1),就是ia[3]所表示的元素；</span></span><br><span class="line"><span class="keyword">int</span> k = p[<span class="number">-2</span>];           <span class="comment">//p[-2]是ia[0]表示的元素；</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> ia[<span class="number">3</span>][<span class="number">4</span>];</span><br><span class="line"><span class="keyword">int</span> (*p)[<span class="number">4</span>] = ia;       <span class="comment">//p指向含有4个整数的数组</span></span><br><span class="line">p = &amp;ia[<span class="number">2</span>];             <span class="comment">//p指向ia的尾元素</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><u>内置的下标运算符所用的索引值不是无符号类型，这一点与vector和string不一样。</u></p>
+</li>
+<li><p>使用数组初始化vector对象：<code>vector&lt;int&gt; ivec(begin(arr),end(arr));</code></p>
+</li>
+</ul>
+<h2 id="C风格字符串"><a href="#C风格字符串" class="headerlink" title="C风格字符串"></a>C风格字符串</h2><ul>
+<li><p>C风格字符串的函数（定义在cstring头文件中），传入此类函数的指针必须指向以空字符作为结束的数组：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">strlen</span>(p);                       <span class="comment">//返回p的长度，空字符不计算在内</span></span><br><span class="line"><span class="built_in">strcmp</span>(p1, p2);                  <span class="comment">//比较p1和p2的相等性。如果p1==p2，返回0；如果p1&gt;p2,返回正值；p1&lt;p2,返回负值</span></span><br><span class="line"><span class="built_in">strcat</span>(p1, p2);                  <span class="comment">//将p2附加到p1之后，返回p1</span></span><br><span class="line"><span class="built_in">strcpy</span>(p1, p2);                  <span class="comment">//将p2拷贝给p1，返回p1</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
 
     </div>
 
@@ -371,6 +454,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2020/10/20/20201020-%E3%80%8Ac++primer%E3%80%8B%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%A1%A8%E8%BE%BE%E5%BC%8F/" rel="next" title="《c++primer》第四章 表达式">
+                  《c++primer》第四章 表达式 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -429,7 +515,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">18k</span>
   </span>
 </div>
 
