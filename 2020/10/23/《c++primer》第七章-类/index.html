@@ -32,7 +32,7 @@
 <meta property="og:description" content="类的基本思想是数据抽象(data abstraction)和封装(encapsulation)。 数据抽象是一种依赖于接口(interface)和实现(implementation)分离的编程（以及设计）技术。类的接口包括用户所能做的操作：类的实现则包括类的数据成员、负责接口实现的函数体以及定义类所需的各种私有函数。 封装实现了类的接口和实现的分离。封装后的类隐藏了它的实现细节，即类的用户只能使">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-23T03:13:07.370Z">
-<meta property="article:modified_time" content="2020-10-25T06:27:51.359Z">
+<meta property="article:modified_time" content="2020-10-25T07:08:04.532Z">
 <meta property="article:author" content="DZY">
 <meta name="twitter:card" content="summary">
 
@@ -271,7 +271,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-10-25 14:27:51" itemprop="dateModified" datetime="2020-10-25T14:27:51+08:00">2020-10-25</time>
+        <time title="修改时间：2020-10-25 15:08:04" itemprop="dateModified" datetime="2020-10-25T15:08:04+08:00">2020-10-25</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -307,6 +307,8 @@
 <li><strong>数据抽象</strong>是一种依赖于<strong>接口</strong>(interface)和<strong>实现</strong>(implementation)分离的编程（以及设计）技术。类的接口包括用户所能做的操作：类的实现则包括类的数据成员、负责接口实现的函数体以及定义类所需的各种私有函数。</li>
 <li><strong>封装</strong>实现了类的接口和实现的分离。封装后的类隐藏了它的实现细节，即类的用户只能使用接口而无法访问实现部分。</li>
 </ul>
+<a id="more"></a>
+
 <h1 id="定义抽象数据类型"><a href="#定义抽象数据类型" class="headerlink" title="定义抽象数据类型"></a>定义抽象数据类型</h1><h2 id="成员函数"><a href="#成员函数" class="headerlink" title="成员函数"></a>成员函数</h2><ul>
 <li><p>所有的成员都必须在类内声明，但是成员函数可以定义在类内也可以定义在类外。</p>
 </li>
@@ -467,7 +469,7 @@
 </li>
 <li><p>成员初始化的顺序和它们在类定义中的出现顺序一致。</p>
 </li>
-<li><p>构造函数也可以使用==默认实参==，如果 一个函数为所有参数都提供了默认实参，则它实际上也定义了==默认构造函数==。</p>
+<li><p>构造函数也可以使用<code>默认实参</code>，如果 一个函数为所有参数都提供了默认实参，则它实际上也定义了<code>默认构造函数</code>。</p>
 </li>
 </ul>
 <h2 id="委托构造函数"><a href="#委托构造函数" class="headerlink" title="委托构造函数"></a>委托构造函数</h2><ul>
@@ -478,13 +480,13 @@
 </li>
 </ul>
 <h2 id="默认构造函数的作用"><a href="#默认构造函数的作用" class="headerlink" title="默认构造函数的作用"></a>默认构造函数的作用</h2><ul>
-<li>当对象被默认初始化或值初始化时自动执行默认构造函数。==默认初始化==在以下情况下发生：<ul>
+<li>当对象被默认初始化或值初始化时自动执行默认构造函数。<code>默认初始化</code>在以下情况下发生：<ul>
 <li>当我们在块作用域内不使用任何初始化定义一个非静态变量或者数组时。</li>
 <li>当一个类本身含有类类型的成员且使用合成的默认构造函数时。</li>
 <li>当类类型的成员没有在构造函数初始值列表中显示地初始化时。</li>
 </ul>
 </li>
-<li>==值初始化==在以下情况下发生：<ul>
+<li><code>值初始化</code>在以下情况下发生：<ul>
 <li>在数组初始化地过程中如果我们提供的初始值数量少于数组的大小时。</li>
 <li>当我们不使用初始值定义一个局部静态变量时。</li>
 <li>当我们通过书写形如 T（ ）的表达式显示地请求值初始化时，其中T是类型名。</li>
@@ -492,7 +494,7 @@
 </li>
 </ul>
 <h2 id="隐式的类类型转换"><a href="#隐式的类类型转换" class="headerlink" title="隐式的类类型转换"></a>隐式的类类型转换</h2><ul>
-<li><p>如果构造函数只接受一个实参，则它实际上定义了==转换为此类类型的隐式转换机制==，有时称这种函数为<strong>转换构造函数</strong>(converting constructor)。</p>
+<li><p>如果构造函数只接受一个实参，则它实际上定义了<code>转换为此类类型的隐式转换机制</code>，有时称这种函数为<strong>转换构造函数</strong>(converting constructor)。</p>
 </li>
 <li><p>编译器只会自动执行一步类型转换。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> null_book = <span class="string">"9-999-9999-9"</span>;</span><br><span class="line"><span class="comment">//构造一个临时的Sale_data对象</span></span><br><span class="line"><span class="comment">//该对象的units_sold和revenue等于0，bookNo等于null_book</span></span><br><span class="line">item.combine(null_book);  <span class="comment">//使用string实参调用Sales_data的combine成员</span></span><br></pre></td></tr></table></figure>
@@ -502,7 +504,7 @@
 </li>
 <li><p>explicit只对一个实参的构造函数有效，只允许在类内声明构造函数时使用。</p>
 </li>
-<li><p>explicit构造函数只能用于==直接初始化==（调用构造函数）不能用于==拷贝初始化==。而且编译器将不会在自动转换过程中使用该构造函数。</p>
+<li><p>explicit构造函数只能用于<code>直接初始化</code>（调用构造函数）不能用于<code>拷贝初始化</code>。而且编译器将不会在自动转换过程中使用该构造函数。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Sales_data <span class="title">item1</span><span class="params">(null_book)</span></span>;  <span class="comment">//正确：直接初始化（显示调用构造函数）</span></span><br><span class="line">Sales_data item2 = null_book; <span class="comment">//错误：不能将explicit构造函数用于拷贝形式的初始化过程</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>为转换显示地使用构造函数：尽管编译器不会将explicit的构造函数用于隐式转换过程，但是可以使用这样的构造函数显示地强制进行转换：</p>
@@ -525,7 +527,7 @@
 </ul>
 </li>
 <li>可以提供一个花括号括起来的成员初始值列表，用它来初始化聚合类的数据成员，且初始值的顺序一致。</li>
-<li>与初始化数组元素的规则一样，如果初始值列表中的元素个数少于类的成员数量，则靠后的成员被==值初始化==。</li>
+<li>与初始化数组元素的规则一样，如果初始值列表中的元素个数少于类的成员数量，则靠后的成员被<code>值初始化</code>。</li>
 <li>显式初始化类的对象的成员存在三个明显的缺点：<ul>
 <li>类的所有成员都是public。</li>
 <li>这样的初始化过程冗长乏味且容易出错。</li>
@@ -536,11 +538,11 @@
 <h2 id="字面值常量类"><a href="#字面值常量类" class="headerlink" title="字面值常量类"></a>字面值常量类</h2><ul>
 <li><p>字面值类型的类可能含有constexpr函数成员。这样的成员必须符合constxpr函数的所有要求，它们是隐式const的。</p>
 </li>
-<li><p>数据成员都是==字面值类型==的==聚合类==是==字面值常量类==。</p>
+<li><p>数据成员都是<code>字面值类型</code>的<code>聚合类</code>是<code>字面值常量类</code>。</p>
 </li>
 <li><p>如果一个类不是聚合类，但它符合下述要求，则它也是一个聚合类：</p>
 <ul>
-<li>数据成员都必须是==字面值类型==。</li>
+<li>数据成员都必须是<code>字面值类型</code>。</li>
 <li>类必须至少含有一个constexpr构造函数。</li>
 <li>如果一个数据成员含有类内初始值，则内置类型成员的初始值必须是一条常量表达式；或者如果成员属于某种类类型，则初始值必须使用成员自己的constexpr构造函数。</li>
 <li>类必须使用析构函数的默认定义，该成员负责销毁类的对象。</li>
@@ -552,14 +554,14 @@
 </li>
 <li><p>constexpr构造函数必须初始化所有数据成员，初始值或者使用constexpr构造函数，或者是一条常量表达式。</p>
 </li>
-<li><p>constexpr构造函数用于生成==constexpr对象==及constexpr函数的参数或返回类型。</p>
+<li><p>constexpr构造函数用于生成<code>constexpr对象</code>及constexpr函数的参数或返回类型。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Debug</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  constexpr Debug(bool b = true): hw(b), io(b), other(b) &#123; &#125;</span><br><span class="line">  constexpr Debug(bool h, bool i, bool o): hw(h), io(i), other(o) &#123; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">constexpr</span> <span class="keyword">bool</span> <span class="title">any</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> hw || io || other; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">set_io</span><span class="params">(<span class="keyword">bool</span> b)</span> </span>&#123; io = b; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">set_hw</span><span class="params">(<span class="keyword">bool</span> b)</span> </span>&#123; hw = b; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">set_other</span><span class="params">(<span class="keyword">bool</span> b)</span> </span>&#123;hw = b; &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">bool</span> hw;</span><br><span class="line">  <span class="keyword">bool</span> io;</span><br><span class="line">  <span class="keyword">bool</span> other;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">constexpr</span> Debug <span class="title">io_sub</span><span class="params">(<span class="literal">false</span>, <span class="literal">true</span>, <span class="literal">false</span>)</span></span>; </span><br><span class="line"><span class="keyword">if</span> (io_sub.any())</span><br><span class="line">    <span class="built_in">cerr</span> &lt;&lt; <span class="string">"print appropriate error messages"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="function"><span class="keyword">constexpr</span> Debug <span class="title">prod</span><span class="params">(<span class="literal">false</span>)</span></span>;</span><br><span class="line"><span class="keyword">if</span> (prod.any())</span><br><span class="line">    <span class="built_in">cerr</span> &lt;&lt; <span class="string">"print an error message"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
 <h1 id="类的静态成员"><a href="#类的静态成员" class="headerlink" title="类的静态成员"></a>类的静态成员</h1><p>声明静态成员：</p>
 <ul>
-<li><p>通过在成员的生命前加上关键字==static==使得其与类关联在一起。</p>
+<li><p>通过在成员的生命前加上关键字<code>static</code>使得其与类关联在一起。</p>
 </li>
 <li><p>类的静态成员存在于任何对象之外，对象中不包括任何与静态数据成员有关的数据。</p>
 </li>
@@ -581,17 +583,15 @@
 </ul>
 <p>定义静态成员：</p>
 <ul>
-<li>可以在类的内部也可以在外部定义静态成员函数。==static关键字==只能出现在==类内部的声明语句==中。</li>
+<li>可以在类的内部也可以在外部定义静态成员函数。<code>static关键字</code>只能出现在<code>类内部的声明语句</code>中。</li>
 <li>静态数据成员不属于类的任何一个对象，所以不是在创建类的对象时被定义的，它们不是由类的构造函数初始化的。</li>
-<li>不能在类的内部初始化静态成员，必须在类的外部定义和初始化每个静态成员，且==只能被定义一次==。</li>
+<li>不能在类的内部初始化静态成员，必须在类的外部定义和初始化每个静态成员，且<code>只能被定义一次</code>。</li>
 <li>类似于全局变量，静态数据成员定义在任何函数之外。一旦被定义就将一直存在于程序的整个生命周期内。</li>
 <li>定义并初始化一个静态成员：<code>double Account::interestRate = initRate();</code></li>
 </ul>
 <p>静态成员的类内初始化：</p>
 <ul>
-<li><p>通常情况下类的静态成员不应该在类内初始化。但可以为静态成员提供const整数类型的类内初始值，不过要求静态成员必须是==字面值常量类型的constexpr==。</p>
-</li>
-<li><p>初始值必须是常量表达式。</p>
+<li><p>通常情况下类的静态成员不应该在类内初始化。但可以为静态成员提供const整数类型的类内初始值，不过要求静态成员必须是<code>字面值常量类型的constexpr==</code>初始值必须是常量表达式。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Account</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">double</span> <span class="title">rate</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> interestRate; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">rate</span><span class="params">(<span class="keyword">double</span>)</span></span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">int</span> period = <span class="number">30</span>;     <span class="comment">//period是常量表达式</span></span><br><span class="line">  <span class="keyword">double</span> daily_tbl[preid];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">constexpr</span> <span class="keyword">int</span> Account::period;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>如果在类的内部提供了一个初始值，则成员的定义不能再指定一个初始值了。</p>
@@ -601,7 +601,7 @@
 </ul>
 <p>静态成员能应用于某些场景，而普通成员不能：</p>
 <ul>
-<li><p>静态数据成员可以是==不完全类型==。特别的，==静态数据成员的类型可以就是它所属的类类型==，而非静态数据成员只能声明成它所属的类的指针或引用。</p>
+<li><p>静态数据成员可以是<code>不完全类型</code>。特别的，<code>静态数据成员的类型可以就是它所属的类类型</code>，而非静态数据成员只能声明成它所属的类的指针或引用。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Bar</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="comment">//...</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">static</span> Bar mem1;  <span class="comment">//正确：静态成员可以是不完全类型</span></span><br><span class="line">  Bar *mem2;        <span class="comment">//正确：指针成员可以是不完全类型</span></span><br><span class="line">  Bar mem3;         <span class="comment">//错误：数据成员必须是完全类型</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>可以使用静态成员作为默认实参。非静态数据成员不能作为默认实参，因为它的值本身属于对象的一部分。</p>
